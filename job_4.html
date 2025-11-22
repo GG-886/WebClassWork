@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>原创小说交流会 · Writer’s Salon</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background-color: #F0E8FF;
+            color: #3b3025;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+        }
+        .page {
+            display: inline-block;
+            background-color: #fefaf5;
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+            padding: 30px 40px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #5b4636;
+            letter-spacing: 1px;
+        }
+        .center { text-align: center; }
+        .right  { text-align: right; }
+        p#intro {
+            font-size: 140%;
+            font-weight: bold;
+            color: #c8493b;
+        }
+        .intro-text {
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+        }
+        .section-title { text-align: center; }
+        table {
+            width: 100%;
+            background-color: #fdf4e5;
+            font-size: 90%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+        }
+        th {
+            background-color: #f2ddc2;
+            font-weight: bold;
+            text-align: left;
+            line-height: 2.2;
+        }
+        td {
+            line-height: 2.0;
+        }
+        table tr:nth-child(even) {
+            background-color: #fbf0de;
+        }
+        table tr:hover {
+            background-color: #eed8be;
+        }
+        /* 后代选择器：div 里的 table 里的 a */
+        div table a {
+            font-weight: bold;
+            font-size: 110%;
+            color: #8b3b30;
+        }
+        /* 链接伪类 */
+        a:link {
+            color: #b6553b;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #7a7b52;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #e36a4c;
+            text-decoration: underline;
+        }
+        a:active {
+            color: #3c4f9f;
+            text-decoration: underline;
+        }
+        /* 带类名的链接 */
+        a.red:link {
+            color: #e25b3d;
+        }
+        a.red:active {
+            color: #3046a1;
+        }
+        a.blue:link {
+            color: #4b7f60;
+        }
+        a.blue:active {
+            color: #a53aa4;
+        }
+        /* 伪元素 */
+        p::first-letter {
+            font-size: 180%;
+            color: #c45b3f;
+        }
+        div::first-line {
+            color: #b04832;
+            font-weight: bold;
+        }
+        .notice {
+            font-size: 90%;
+            line-height: 1.6;
+        }
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, rgba(91,70,54,0), rgba(91,70,54,0.6), rgba(91,70,54,0));
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- 顶部标题区 -->
+    <h1 class="center">原创小说交流会 · Writer’s Salon</h1>
+    <div class="divider"></div>
+        <h2 id="intro" class="center">本周主题：在虚构与真实之间，我们围坐而谈</h2>
+    <!-- 活动介绍区 -->
+    <div>
+        <p class="intro-text center">
+           你是否写过一段无人知晓的开篇？<br>
+        </p>
+		<p class="intro-text center">
+		   你是否曾在深夜为角色设计命运，却找不到读者？<br>
+		</p>
+		<p class="intro-text center">
+		   你是否好奇，别人如何用笔尖撬动世界？
+		</p>
+		<p class="intro-text right">
+		    本周六晚七点，城市书店将点亮柔和灯光，邀请你在城市夜色中，与众写者用作品对话。
+		</p>
+        <p id="intro">
+            本次交流席位有限，报名成功后以短信确认为准，请务必留下可联系的手机号。
+        </p>
+    </div>
+	
+    <div class="divider"></div>
+<!-- 在线报名锚点 -->
+<a name="join">在线报名</a>
+</h1>
+
+<!-- 小说交流会报名表单 -->
+<form action="#" method="post">
+  <table border="1" cellspacing="0" cellpadding="5" width="90%">
+    <tr>
+      <td width="20%">姓名/笔名：</td>
+      <td><input type="text" name="username" size="20"></td>
+    </tr>
+    <tr>
+      <td>性别：</td>
+      <td>
+        <input type="radio" name="gender" value="男" checked> 男
+        <input type="radio" name="gender" value="女"> 女
+      </td>
+    </tr>
+    <tr>
+      <td>出生日期：</td>
+      <td>
+        <input type="text" name="year" size="4"> 年
+        <input type="text" name="month" size="2"> 月
+        <input type="text" name="day" size="2"> 日
+      </td>
+    </tr>
+    <tr>
+      <td>联系方式：</td>
+      <td>
+        手机：<input type="text" name="phone" size="15"><br>
+        邮箱：<input type="text" name="email" size="30">
+      </td>
+    </tr>
+    <tr>
+      <td>是否有写作基础：</td>
+      <td>
+        <input type="radio" name="base" value="无基础" checked> 无基础
+        <input type="radio" name="base" value="写过短篇"> 写过短篇
+        <input type="radio" name="base" value="已发表作品"> 已发表作品
+      </td>
+    </tr>
+    <tr>
+      <td>兴趣方向（可多选）：</td>
+      <td>
+        <input type="checkbox" name="hobby" value="现实"> 现实向
+        <input type="checkbox" name="hobby" value="悬疑"> 悬疑
+        <input type="checkbox" name="hobby" value="奇幻"> 奇幻
+        <input type="checkbox" name="hobby" value="科幻"> 科幻
+        <input type="checkbox" name="hobby" value="言情"> 言情
+      </td>
+    </tr>
+    <tr>
+      <td>年级：</td>
+      <td>
+        <select name="grade">
+          <option value="大一" selected>大一</option>
+          <option value="大二">大二</option>
+          <option value="大三">大三</option>
+          <option value="大四">大四</option>
+          <option value="研究生">研究生</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>自我介绍：</td>
+      <td>
+        <textarea name="intro" rows="4" cols="50" placeholder="简单介绍你的阅读/写作经历，或想对社团说的话..."></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="center">
+        <input type="submit" value="提交报名" style="padding:6px 20px;background:#c8493b;color:#fff;border:0;border-radius:4px;cursor:pointer;">
+      </td>
+    </tr>
+  </table>
+</form>
+    <!-- 活动报名信息表格区 -->
+    <div>
+        <h3 class="section-title">活动报名名单</h3>
+        <table>
+            <tr>
+                <th>编号</th>
+                <th>姓名/笔名</th>
+                <th>作品类型</th>
+                <th>联系方式</th>
+                <th>报名状态</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td><a href="https://example.com/writer/zhangsan">张三</a></td>
+                <td>现实</td>
+                <td>138****0001</td>
+                <td>已确认席位</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td><a href="https://example.com/writer/lisi">李四</a></td>
+                <td>悬疑</td>
+                <td>139****0002</td>
+                <td>待确认</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td><a href="https://example.com/writer/shadowink">ShadowInk</a></td>
+                <td>奇幻</td>
+                <td>137****0003</td>
+                <td>候补名单</td>
+            </tr>
+        </table>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 页面链接区：所有文字均与写作/小说/创作相关 -->
+    <div class="center">
+        <p>
+            <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期小说写作照片</a><br>
+            <a class="blue" href="https://gg-886.github.io/WebClassWork/job3/job3.html">在线创作活动详情咨询</a><br>
+        </p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 底部公告区 -->
+    <div class="notice">
+        城市书店地址：幸福路 88 号，地铁二号线“图书城站”A 口出后步行三分钟。<br>
+        营业时间：工作日 10:00 - 21:00，周末与节假日 9:30 - 22:00。<br>
+        温馨提醒：夜间活动建议提早到达现场，如需签名书请在前台登记。
+    </div>
+
+</div>
+
+</body>
+</html>
